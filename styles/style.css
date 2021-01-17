@@ -7,4 +7,109 @@ light blue: #1c5380
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background-image: url("../images/bgtile.png");
+  background-repeat: repeat-x;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  }
+
+header {
+  padding-left: 250px;
+  padding-top: 100px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  padding: 0px 20px;
+  margin: 0px 50px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.rightside {
+  margin: 10px 0px 50px 30px;
+  width: 700px;
+  height: 210px;
+}
+
+.bottom {
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  padding: 15px 50px 0px 30px;
+  font-size: 15px;
+  width: 420px;
+}
+
+.top>button {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+h3 {
+  color: #06365f;
+  font-size: 22px;
+  font-style:normal;
+  }
+
+.login {
+  border-style:outset;
+  background: #06365f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,#06365f, #1c5380);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,  #1c5380, #689fcc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: #06365f;
+  text-decoration: none;
+  border: 1px solid #1c5380;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer {
+  width: 800px;
+  margin-top: 100px;
+  padding-left: 100px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  }
+
+.footer li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content:space-evenly;
+  color:#1c5380;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.logo {
+  color: gray;
+  font-size: 11px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.buttons {
+  width: 350px;
+  padding-top: 15px;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
